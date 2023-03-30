@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PI_RATE</title>
+  <link rel="icon" href="img/pirate.png" type="image/ico" sizes="16x16">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+  <!-- Navigation Bar -->
+  <nav id="haut" class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="index.html">Projet PI_RATE</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Challenges</a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#drapeau">Drapeau</a></li>
+            <li><a class="dropdown-item" href="#assault">Assault</a></li>
+            <li><a class="dropdown-item" href="#pompier">Pompier</a></li>
+            <li><a class="dropdown-item" href="#caa">CAA</a></li>
+            <li><a class="dropdown-item" href="#binerf">Bi-Nerf</a></li>
+
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#petitcoffre">Petit coffre</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#groscoffre">Gros coffre</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#applicationmobile">Application mobile</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#gallerie">Gallerie</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+
+
+  <div class="container-fluid text-center">
+    <div class="row content">
+      <div class="col-sm-2 sidenav">
+      </div>
+      <div class="col-sm-8 text-left">
+
+        <div class="container-fluid">
+          <div class="row align-items-center">
+            <div class="col-12">
+              <h1 class="mt-5 text-center">Bienvenue sur le projet PI_RATE</h1>
+              <p class="lead text-justify">Il s'agit d'un jeu où l'on doit ouvrir le coffre aux trésors. Il y a deux coffres. L'un
+                contient les épreuves et l'autre le trésor. Il a plusieurs épreuves au jeu. Lorsque les épreuves sont
+                réussies, le petit coffre s'ouvre. Chacune des épreuves utilisent différentes composantes. Nous
+                expliquerons chacune des composantes utilisées ainsi que l'application mobile et les instructions de
+                chaque jeu. Pour l'ensemble du projet, nous avons utilisé deux raspberry pi et un arduino. Ce projet a
+                été réalisé dans le cadre de trois cours d'informatique 420-614-RI OBJETS CONNECTÉS, 420-616-RI PROJET
+                D'INTÉGRATION - PHASE II et 420-636-RI PROGRAMMATION D'APPLICATIONS MOBILES.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-fluid">
+          <div class="row text-center align-items-center py-2">
+            <div class="col-xl-3 col-md-3 col-12 py-2">
+              <img class="img-fluid" width="250" height="250" src="img/pi-logo.jpeg" alt="Raspberry pi logo">
+            </div>
+            <div class="col-xl-3 col-md-3  col-12 py-2">
+              <img class="img-fluid" width="250" height="250" src="img/arduinoLogo.jpg" alt="Arduino logo">
+            </div>
+            <div class="col-xl-3 col-md-3  col-12 py-2">
+              <img class="img-fluid" width="250" height="250" src="img/androidstudiologo.png" alt="Android Studio logo">
+            </div>
+            <div class="col-xl-3 col-md-3  col-12 py-2">
+              <img class="img-fluid" width="250" height="250" src="img/pirateShip.jpg" alt="Pirate Symbol">
+            </div>
+          </div>
+        </div>
+
+        <div class="container-fluid">
+          <div class="row align-items-center">
+            <div class="col-lg-12">
+              <h1 class="mt-5 text-center">Raspberry Pi</h1>
+              <p class="lead text-justify">Deux Raspberry Pi ont été utilisés dans le cadre de notre projet. L'un est dans le petit
+                coffre et l'autre dans le gros coffre. Le Raspberry Pi sert a connecter des objets comme des led, des
+                bouttons, des moteurs et même l'Arduino.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-fluid">
+          <div class="row text-center align-items-center">
+            <div class="col-12 py-5">
+              <img class="img-fluid" width="600" height="600" src="img/raspberryPi.jpg" alt="Raspberry pi">
+            </div>
+
+          </div>
+        </div>
+
+
+        <div class="container-fluid">
+          <div class="row align-items-center">
+            <div class="col-lg-12">
+              <h1 class="mt-5 text-center">Arduino</h1>
+              <p class="lead text-justify">Nous avons utilisé un Arduino connecté à un Raspberry Pi afin d'avoir plus de prise GPIO.
+                L'Arduino se retrouve dans le gros coffre connecté au PI par câble USB.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-fluid">
+          <div class="row text-center align-items-center">
+            <div class="col-12 py-5">
+              <img class="img-fluid" width="600" height="600" src="img/arduinoUno.jpg" alt="Arduino Uno">
+            </div>
+          </div>
+        </div>
+
+        <div id="petitcoffre" class="container-fluid">
+          <div class="row align-items-center">
+            <div class="col-lg-12">
+              <h1 class="mt-5 text-center">Petit coffre</h1>
+              <p class="lead text-justify">Le petit coffre comprend un Raspberry Pi, une batterie 5V afin de l'alimenter, une led,
+                des buzzers, un lecteur RFID et un servo moteur qui sert à vérouiller le coffre.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="container-fluid">
+          <div class="row text-center align-items-center py-2">
+            <div class="col-12 py-2">
+              <img class="img-fluid" width="600" height="600" src="img/petitcoffre/petitCoffre5.png" alt="Petit coffre">
+            </div>
+          </div>
+
+
+          <div class="container-fluid">
+            <div class="row text-center align-items-center py-2">
+              <div class="col-12 py-2">
+                <img class="img-fluid" width="600" height="600" src="img/pirate/petitCoffreOuvert.jpg"
+                  alt="Petit coffre">
+              </div>
+            </div>
+          </div>
+
+          <div class="container-fluid">
+            <div class="row text-center align-items-center py-2">
+              <div class="col-12 py-2">
+                <img class="img-fluid" width="600" height="600" src="img/petitcoffre/petitCoffre.png"
+                  alt="Petit coffre">
+              </div>
+            </div>
+          </div>
+
+
+
+          <div id="groscoffre" class="container-fluid">
+            <div class="row align-items-center">
+              <div class="col-lg-12">
+                <h1 class="mt-5 text-center">Gros coffre</h1>
+                <p class="lead text-justify">Le gros coffre comprend un Arduino connecté à un Raspberry Pi, un power supply
+                  d'ordinateur ainsi que tous les challenges. Un lecteur de carte RFID permet de scanner une carte afin
+                  de déverrouiller le petit coffre. Il y a aussi un clavier (keypad) afin de faire une fausse
+                  synchronisation.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="container-fluid">
+            <div class="row text-center align-items-center py-2">
+              <div class="col-12 py-2">
+                <img class="img-fluid" width="600" height="600" src="img/pirate/grosCoffre.jpg" alt="Gros coffre">
+              </div>
+            </div>
+          </div>
+
+          <div class="container-fluid">
+            <div class="row text-center align-items-center py-2">
+              <div class="col-12 py-2">
+                <img class="img-fluid" width="600" height="600" src="img/pirate/grosCoffreFinal1.jpg" alt="Gros coffre">
+              </div>
+            </div>
+          </div>
+
+          <div class="container-fluid">
+            <div class="row text-center align-items-center py-2">
+              <div class="col-12 py-2">
+                <img class="img-fluid" width="900" height="900" src="img/pirate/grosCoffre2.jpg" alt="Gros coffre">
+              </div>
+            </div>
+          </div>
+
+          <div class="container-fluid">
+            <div class="row align-items-center">
+              <div class="col-lg-12">
+                <h1 class="mt-5 text-center">Fonctionnement</h1>
+                <p class="lead text-justify">Le fonctionnement du système. On utilise un PI dans le gros coffre comme broker. Le
+                  broker reçoit et envoi les requêtes MQTT à ceux qui souscrivent aux topics publiés. Tous les challenges sont programmés en python avec des threads pour
+                  certaines fonctionnalités. L'application mobile a été développé en Java.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="container-fluid">
+            <div class="row text-center align-items-center py-2">
+              <div class="col-12 py-2">
+                <img class="img-fluid" width="800" height="800" src="img/pirate/schema.jpg" alt="schema">
+              </div>
+            </div>
+          </div>
+
+          <div class="container-fluid">
+            <div class="row text-center align-items-center py-2">
+              <div class="col-12 py-2">
+                <img class="img-fluid" width="800" height="800" src="img/schema.png" alt="schema">
+              </div>
+            </div>
+          </div>
+
+          <div id="drapeau" class="container-fluid">
+            <div class="row align-items-center">
+              <div class="col-12">
+                <h1 class="mt-5 text-center">Drapeau</h1>
+                <p class="lead text-justify">Ce jeu consiste à faire le mélange de couleur demandé à l'aide de boutons. Le jeu
+                  comporte 3 led de couleurs différentes et trois boutons associés aux couleurs correspondantes.</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="container-fluid">
+            <div class="row text-center align-items-center py-2">
+              <div class="col-12 py-2">
+                <img class="img-fluid" width="900" height="900" src="img/pirate/drapeau.jpg" alt="Jeu drapeau">
+              </div>
+            </div>
+          </div>
+
+          <div class="container-fluid">
+            <div class="row text-center align-items-center py-2">
+              <div class="col-12 py-2">
+                <img class="img-fluid" width="900" height="900" src="img/pirate/drapeau1.jpg" alt="Jeu drapeau">
+              </div>
+            </div>
+          </div>
+
+
+          <div id="assault" class="container-fluid">
+            <div class="row align-items-center">
+              <div class="col-12">
+                <h1 class="mt-5 text-center">Assault</h1>
+                <p class="lead text-justify">Ce jeu consiste à utiliser un potentiomètre et d'atteindre une valeur aléatoire. Le
+                  potentiomètre est un élément analogique qui requiert l'utilisation d'une puce ADS7830 qui convertie le
+                  signal analogique vers un signal numérique.</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="container-fluid">
+            <div class="row text-center align-items-center py-2">
+              <div class="col-xl-6 col-md-6 col-12 py-2">
+                <img class="img-fluid" width="900" height="900" src="img/pirate/assault.jpg" alt="Jeu assault">
+              </div>
+              <div class="col-xl-6 col-md-6 col-12 py-2">
+                <img class="img-fluid" width="250" height="250" src="img/pirate/assault2.jpg" alt="Jeu assault">
+              </div>
+            </div>
+          </div>
+
+          <div id="pompier" class="container-fluid">
+            <div class="row align-items-center">
+              <div class="col-12">
+                <h1 class="mt-5 text-center">Pompier</h1>
+                <p class="lead text-justify">Ce jeu consiste à déplacer un personnage vers l'extincteur à l'aide d'un joystick. Le
+                  joystick est un élément analogique qui requiert aussi l'utilisation de la puce ADS7830.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="container-fluid">
+            <div class="row text-center align-items-center py-2">
+              <div class="col-xl-4 col-md-4 col-12 py-2">
+                <img class="img-fluid" width="900" height="900" src="img/pirate/pompier.jpg" alt="Jeu pompier">
+              </div>
+              <div class="col-xl-4 col-md-4 col-12 py-2">
+                <img class="img-fluid" width="300" height="300" src="img/pirate/pompier1.jpg" alt="Jeu pompier">
+              </div>
+              <div class="col-xl-4 col-md-4 col-12 py-2">
+                <img class="img-fluid" width="300" height="300" src="img/applicationmobile/screenshot_pompier.png" alt="Jeu pompier">
+              </div>
+            </div>
+          </div>
+
+
+          <div id="caa" class="container-fluid">
+            <div class="row align-items-center">
+              <div class="col-12">
+                <h1 class="mt-5 text-center">CAA</h1>
+                <p class="lead text-justify">Ce jeu consiste à connecter un câble d'un symbole à un autre. Nous avons utilisé des
+                  câbles de type RCA.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="container-fluid">
+            <div class="row text-center align-items-center py-2">
+              <div class="col-12 py-2">
+                <img class="img-fluid" width="900" height="900" src="img/pirate/caa.jpg" alt="Jeu caa">
+              </div>
+            </div>
+          </div>
+
+          <div class="container-fluid">
+            <div class="row text-center align-items-center py-2">
+              <div class="col-12 py-2">
+                <img class="img-fluid" width="300" height="300" src="img/applicationmobile/screenshot_CAA.png" alt="Jeu caa">
+              </div>
+            </div>
+          </div>
+
+          <div id="binerf" class="container-fluid">
+            <div class="row align-items-center">
+              <div class="col-12">
+                <h1 class="mt-5 text-center">Bi-Nerf</h1>
+                <p class="lead text-justify">Le jeu consiste à faire un nombre binaire à l'aide d'interrupteurs. Nous avons utilisé un
+                  Arduino comme extension du Raspberry PI et la bibliothèque pyfirmata.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="container-fluid">
+            <div class="row text-center align-items-center py-2">
+              <div class="col-12 py-2">
+                <img class="img-fluid" width="900" height="900" src="img/pirate/binerf1.jpg" alt="Jeu binaire">
+              </div>
+            </div>
+          </div>
+
+          <div class="container-fluid">
+            <div class="row text-center align-items-center py-2">
+              <div class="col-12 py-2">
+                <img class="img-fluid" width="900" height="900" src="img/pirate/binerf2.jpg" alt="Jeu binaire">
+              </div>
+            </div>
+          </div>
+
+
+          <div id="applicationmobile" class="container-fluid">
+            <div class="row align-items-center">
+              <div class="col-lg-12">
+                <h1 class="mt-5 text-center">Application mobile</h1>
+                <p class="lead text-justify">L'application mobile a été développé avec Android Studio en langage Java.</p>
+              </div>
+            </div>
+          </div>
+
+        <div class="container-fluid">
+          <div class="row text-center align-items-center py-2">
+            <div class="col-xl-4 col-md-4 col-12 py-2">
+              <img class="img-fluid" width="300" height="250" src="img/applicationmobile/screenshot_register.png" alt="register">
+            </div>
+            <div class="col-xl-4 col-md-4  col-12 py-2">
+              <img class="img-fluid" width="300" height="250" src="img/applicationmobile/screenshot_login.png" alt="login">
+            </div>
+          <div class="col-xl-4 col-md-4 col-12 py-2">
+             <img class="img-fluid" width="300" height="300" src="img/applicationmobile/screenshot_dashboard.png" alt="dashboard">
+            </div>
+          </div>
+        </div>
+
+                <div class="container-fluid">
+          <div class="row text-center align-items-center py-2">
+            <div class="col-xl-4 col-md-4  col-12 py-2">
+              <img class="img-fluid" width="300" height="300" src="img/applicationmobile/screenshot_sync.png" alt="sync">
+            </div>
+            <div class="col-xl-4 col-md-4  col-12 py-2">
+              <img class="img-fluid" width="300" height="300" src="img/applicationmobile/screenshot_details.png" alt="stats">
+            </div>
+          </div>
+        </div>
+
+
+          <div id="gallerie" class="container-fluid">
+            <div class="row align-items-center">
+              <div class="col-lg-12">
+                <h1 class="mt-5 text-center">Gallerie</h1>
+              </div>
+            </div>
+          </div>
+
+          <div class="container-fluid text-center align-items-center">
+
+            <div class="img-thumbnail m-3">
+              <a href="img/pirate/grosetpetitcoffre.jpg" target="_blank">
+                <img src="img/pirate/grosetpetitcoffre.jpg" alt="Gros et petit coffre"
+                  style="width: 300px; height: 200px;">
+              </a>
+            </div>
+
+            <div class="img-thumbnail m-3">
+              <a href="img/pirate/grosetpetitcoffreouvert.jpg" target="_blank">
+                <img src="img/pirate/grosetpetitcoffreouvert.jpg" alt="Gros et petit coffre ouvert"
+                  style="width: 300px; height: 200px;">
+              </a>
+            </div>
+
+            <div class="img-thumbnail m-3">
+              <a href="img/pirate/rfid.jpg" target="_blank">
+                <img src="img/pirate/rfid.jpg" alt="Gros coffre final" style="width: 300px; height: 200px;">
+              </a>
+            </div>
+
+            <div class="img-thumbnail m-3">
+              <a href="img/pirate/convertisseur.jpg" target="_blank">
+                <img src="img/pirate/convertisseur.jpg" alt="convertisseur" style="width: 300px; height: 200px;">
+              </a>
+            </div>
+
+            <div class="img-thumbnail m-3">
+              <a href="img/pirate/powersupply.jpg" target="_blank">
+                <img src="img/pirate/powersupply.jpg" alt="powersupply" style="width: 300px; height: 200px;">
+              </a>
+            </div>
+
+            <div class="img-thumbnail m-3">
+              <a href="img/pirate/grosCoffreOuvert.jpg" target="_blank">
+                <img src="img/pirate/grosCoffreOuvert.jpg" alt="Gros coffre ouvert"
+                  style="width: 300px; height: 200px;">
+              </a>
+            </div>
+
+
+            <div class="img-thumbnail m-3">
+              <a href="img/pirate/int1.jpg" target="_blank">
+                <img src="img/pirate/int1.jpg" alt="convertisseur" style="width: 300px; height: 200px;">
+              </a>
+            </div>
+
+            <div class="img-thumbnail m-3">
+              <a href="img/pirate/int2.jpg" target="_blank">
+                <img src="img/pirate/int2.jpg" alt="powersupply" style="width: 300px; height: 200px;">
+              </a>
+            </div>
+
+            <div class="img-thumbnail m-3">
+              <a href="img/pirate/int3.jpg" target="_blank">
+                <img src="img/pirate/int3.jpg" alt="Gros coffre ouvert" style="width: 300px; height: 200px;">
+              </a>
+            </div>
+
+            <div class="img-thumbnail m-3">
+              <a href="img/pirate/int4.jpg" target="_blank">
+                <img src="img/pirate/int4.jpg" alt="convertisseur" style="width: 300px; height: 200px;">
+              </a>
+            </div>
+
+            <div class="img-thumbnail m-3">
+              <a href="img/pirate/int5.jpg" target="_blank">
+                <img src="img/pirate/int5.jpg" alt="powersupply" style="width: 300px; height: 200px;">
+              </a>
+            </div>
+
+            <div class="img-thumbnail m-3">
+              <a href="img/pirate/int6.jpg" target="_blank">
+                <img src="img/pirate/int6.jpg" alt="Gros coffre ouvert" style="width: 300px; height: 200px;">
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-sm-2 sidenav">
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container-fluid">
+        <div class="row text-center align-items-center py-2">
+          <div class="col-lg-12">
+            <p>&copy; Projet PI_RATE 2023. Tout droit réservé.</p>
+            <p>Créé par JP et PAG</p>
+            <a class="haut" href="#haut">Haut de la page</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
